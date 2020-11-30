@@ -1,0 +1,26 @@
+import request from '@/utils/request'
+
+export default {
+{{ name }}List(params) {
+  return request({
+  url: '/user/appeal_list',
+  method: 'get',
+  params
+  })
+},
+update{{ properCase name }}(data) {
+  return request({
+  url: '/user/deal_with_appeal',
+  method: 'post',
+  data
+  })
+},
+delete{{ properCase name }}(data) {
+  return request({
+  url: '/user/appeal_deal_result',
+  method: 'post',
+  data
+  })
+},
+
+}
